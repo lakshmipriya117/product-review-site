@@ -1,0 +1,26 @@
+<app-header3></app-header3>
+<div>
+    <table style="width:100%; color: aliceblue; margin-top: 15%;" border=1px >
+        <tr>
+          <th>Productname</th>
+          
+          <th>Genre</th>
+          <th>Rating</th>
+          <th>Description</th>
+          <th>Image</th>
+          <th>Edit</th>
+        </tr>
+        <tr style="align-content: center; width:100%;" *ngFor='let review of reviews'>
+          <td>{{review.proName}}</td>
+         
+          <td>{{ review.proGenre}}</td>
+          <td>{{review.proRating}}</td>
+          <td>{{review.proDesc}}</td>
+          <td>{{ review.proImage}}</td>
+          <button (click)="editReview(review)">Update</button>
+          <button (click)="deleteReview(review)">Delete</button>
+        </tr>
+        
+      </table>
+</div>
+

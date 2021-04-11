@@ -1,0 +1,19 @@
+<app-header3></app-header3>
+<div>
+    <table style="width:100%;margin-top: 15%; color: azure;" border="1px" >
+        <tr>
+          <th>Productname</th>
+          <th>Genre</th>
+          <th>Description</th>
+        </tr>
+   
+        <tr style="align-content: center; width:100%;"  *ngFor='let suggest of suggests'>
+          <td>{{suggest.name}}</td>
+          <td>{{suggest.genre}}</td>
+          <td>{{suggest.desc}}</td>
+          
+        </tr>
+        
+      </table>
+</div>
+<app-footer></app-footer>
